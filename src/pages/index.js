@@ -1,21 +1,48 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import HomeImage from "../components/HomeImage";
+import SocialIcons from "../components/SocialIcons";
+import PresentationText from "../components/PresentationText";
+import ContainerFullWidth from "../components/ContainerFullWidth";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const HomeContainer = styled.section`
+	width: 900px;
+	height: 400px;
+	padding: 0 3rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+`;
 
-export default IndexPage
+const TextAndIcons = styled.div`
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+`;
+
+export default function Home() {
+	return (
+		<Layout>
+			<ContainerFullWidth>
+				<SEO title="Home" />
+				<HomeContainer>
+					<TextAndIcons>
+						<PresentationText />
+						<SocialIcons />
+					</TextAndIcons>
+					<HomeImage />
+				</HomeContainer>
+			</ContainerFullWidth>
+		</Layout>
+	);
+}
