@@ -42,14 +42,28 @@ module.exports = {
 			resolve: "gatsby-transformer-remark",
 			options: {
 				plugins: [
-					`gatsby-remark-relative-images`,
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: "gatsby-remark-relative-images",
+						options: {
+							name: "uploads"
+						}
+					},
+					{
+						resolve: "gatsby-remark-images",
 						options: {
 							maxWidth: 750,
 							linkImagesToOriginal: false
 						}
-					}
+					},
+
+					{
+						resolve: "gatsby-remark-copy-linked-files",
+						options: {
+							destinationDir: "static/assets/img/"
+						}
+					},
+					`gatsby-remark-lazy-load`,
+					`gatsby-remark-prismjs`
 				]
 			}
 		}

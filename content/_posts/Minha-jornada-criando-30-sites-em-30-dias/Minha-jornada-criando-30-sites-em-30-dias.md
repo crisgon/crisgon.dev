@@ -6,13 +6,11 @@ tags: [HTML, CSS, Javascript]
 
 Quem nunca achou uma vaga maneira e pensou em enviar um currículo, mas desistiu por não ter o que mostrar? E quantas vezes alegamos que não tivemos oportunidade de trabalhar com a tecnologia X ou Y?
 
-Muitas vezes damos a desculpa de não ter um portfólio  por nunca ter trabalhado, algumas pessoas até alegam que não constroem projetos fictícios por falta de ideias. Pois bem, que bom que temos uma comunidade maravilhosa que está sempre disposta a criar formas de ajudar.
+Muitas vezes damos a desculpa de não ter um portfólio por nunca ter trabalhado, algumas pessoas até alegam que não constroem projetos fictícios por falta de ideias. Pois bem, que bom que temos uma comunidade maravilhosa que está sempre disposta a criar formas de ajudar.
 
 Nesse post eu vou contar um pouco sobre minha jornada com o desafio [30 Days 30 Sites](https://www.subscribepage.com/30days30sites)
 
-<p class="center">
 ![30 days 30 sites](https://i.imgur.com/ZyHW13b.png)
-</p>
 
 ### Aceitando o desafio
 
@@ -20,22 +18,21 @@ Tudo começou quando descobri a hashtag #100DaysOfCode no twitter, fui navegando
 
 ### Novas tecnologias
 
-Um dos pontos fortes desse desafio é a liberdade que é dada para o participante, pois ele nos entrega apenas um tema e deixa todo o resto a nosso critério, essa é uma boa forma de experimentar diversas tecnologias e isso vai nos permitir adquirir um conhecimento prático, coisa que não conseguimos apenas lendo um livro ou fazendo um curso. 
-Durante a minha trajetória eu pude trabalhar na prática durante grande parte do desafio com PUG, SASS, GULP e Mobile First. A possibilidade de trabalhar com Mobile First em mais de 20 projetos me deu uma bagagem considerável sobre desenvolvimento responsivo, coisa que antes eu não tinha segurança para desenvolver e sempre ficava buscando algum framework para todas as ocasiões. 
+Um dos pontos fortes desse desafio é a liberdade que é dada para o participante, pois ele nos entrega apenas um tema e deixa todo o resto a nosso critério, essa é uma boa forma de experimentar diversas tecnologias e isso vai nos permitir adquirir um conhecimento prático, coisa que não conseguimos apenas lendo um livro ou fazendo um curso.
+Durante a minha trajetória eu pude trabalhar na prática durante grande parte do desafio com PUG, SASS, GULP e Mobile First. A possibilidade de trabalhar com Mobile First em mais de 20 projetos me deu uma bagagem considerável sobre desenvolvimento responsivo, coisa que antes eu não tinha segurança para desenvolver e sempre ficava buscando algum framework para todas as ocasiões.
 Na reta final eu ainda tive a oportunidade de usar o CSS Grid e consegui bons resultados ao utiliza-lo.
 
 ### Trabalhando com temas que gosto
-<p class="center">
-  ![Site Star Wars](https://i.imgur.com/vfpuAlD.png)
-  *Site 26: Jogo do Star Wars*
-</p>
+
+![Site Star Wars](https://i.imgur.com/vfpuAlD.png)
+_Site 26: Jogo do Star Wars_
 
 Como havia dito anteriormente, o desafio nos possibilita liberdade para construir aquilo que desejamos. Graças a isso pude construir sites de temas que gosto e isso dá uma certa motivação para continuar.
 
-###  Nem tudo são flores...
+### Nem tudo são flores...
 
-O desafio propõe a criação de 30 sites em 30 dias, entretanto nem sempre é possível concluir durante o prazo. Sempre aparecem complicações que acabam atrapalhando o processo, porém não desanime e siga em frente. 
-Eu iniciei minha jornada no fim do semestre da faculdade, ou seja, fiz algo muito arriscado... Sempre precisava estudar para alguma prova ou fazer algum trabalho, e isso acabava comprometendo meu progresso com a criação dos sites. Fiquei alguns dias sem codar e teve momentos em que eu tirava 1 ou 2 horas para fazer um site, verificando todos os sites da para perceber quais foram feito nessa situação. 
+O desafio propõe a criação de 30 sites em 30 dias, entretanto nem sempre é possível concluir durante o prazo. Sempre aparecem complicações que acabam atrapalhando o processo, porém não desanime e siga em frente.
+Eu iniciei minha jornada no fim do semestre da faculdade, ou seja, fiz algo muito arriscado... Sempre precisava estudar para alguma prova ou fazer algum trabalho, e isso acabava comprometendo meu progresso com a criação dos sites. Fiquei alguns dias sem codar e teve momentos em que eu tirava 1 ou 2 horas para fazer um site, verificando todos os sites da para perceber quais foram feito nessa situação.
 
 ### Recebendo e dando feedbacks
 
@@ -43,9 +40,7 @@ Eu iniciei minha jornada no fim do semestre da faculdade, ou seja, fiz algo muit
 
 Os feedbacks em geral são dados no Twitter ou por meio do grupo do facebook, onde você simplesmente compartilha seu trabalho e recebe opiniões sobre ele.
 
-<p class="center">
-![Feedback](https://i.imgur.com/nyoVFzW.png)  
-</p>
+![Feedback](https://i.imgur.com/nyoVFzW.png)
 
 Durante os feedbacks, provavelmente você vai precisar explicar como fez determinada parte do site ou como utilizar determinada tecnologia. Isso é muito bom, pois é explicando que se aprende!
 
@@ -55,14 +50,13 @@ Como eu disse logo ali em cima, "Todo mundo precisa de um feedback!". Outras pes
 
 Os temas que recebemos diariamente são bastante diversificados e nos dão a possibilidade de construir sites de vários tipos. Esses são alguns dos que mais curti o resultado.
 
-* [Blog](https://crisgon.github.io/30Days30Sites/blog/index.html)
-* [Celebridade](https://crisgon.github.io/30Days30Sites/celebrity/default.html)
-* [Evento](https://crisgon.github.io/30Days30Sites/events/default.html)
-* [Shop](https://crisgon.github.io/30Days30Sites/fashion/index.html)
-* [Game](https://crisgon.github.io/30Days30Sites/game/src/index.html)
+- [Blog](https://crisgon.github.io/30Days30Sites/blog/index.html)
+- [Celebridade](https://crisgon.github.io/30Days30Sites/celebrity/default.html)
+- [Evento](https://crisgon.github.io/30Days30Sites/events/default.html)
+- [Shop](https://crisgon.github.io/30Days30Sites/fashion/index.html)
+- [Game](https://crisgon.github.io/30Days30Sites/game/src/index.html)
 
 Você pode conferir todos os trabalhos [aqui](https://crisgon.github.io/30Days30Sites/projects/index.html), onde eu listo as tecnologias que usei em cada site. E pode verificar os códigos no meu [github](https://github.com/crisgon/30Days30Sites).
-
 
 ### Outros dailys
 
@@ -72,8 +66,9 @@ Atualmente eu estou fazendo mais um daily, o dailycssimages. Em breve vou fazer 
 
 ### Conclusão
 
-Concluir essa jornada não vai me garantir um emprego, mas me garantiu muito conhecimento e crescimento. É claro que os projetos não foram feitos da melhor forma possível e ainda tenho muito a melhorar, mas o importante do desafio é o comprometimento e a busca continua por melhorias. 
+Concluir essa jornada não vai me garantir um emprego, mas me garantiu muito conhecimento e crescimento. É claro que os projetos não foram feitos da melhor forma possível e ainda tenho muito a melhorar, mas o importante do desafio é o comprometimento e a busca continua por melhorias.
 Nessa caminhada **o que realmente importa não é o resultado final, mas sim o processo**. A conclusão desse desafio não mostra apenas que sou capaz de construir sites, ela mostra o comprometimento e a vontade de crescimento.
+
 #### E você? O que está esperando para se desafiar?
 
 </br></br>

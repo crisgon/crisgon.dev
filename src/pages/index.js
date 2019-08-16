@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "styled-media-query";
 
 import SEO from "../components/seo";
 import Layout from "../components/Layout";
@@ -20,6 +21,15 @@ const HomeContainer = styled.section`
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+
+	${media.lessThan("medium")`
+		width: 600px;
+	`}
+
+	${media.lessThan("small")`
+		width: 300px;
+		justify-content: center;
+	`}
 `;
 
 const TextAndIcons = styled.div`

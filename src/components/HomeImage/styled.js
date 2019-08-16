@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const HomeImage = styled.div`
 	width: 294px;
@@ -19,4 +20,18 @@ export const HomeImage = styled.div`
 		left: 30px;
 		border: 8px solid #271f38;
 	}
+
+	${media.lessThan("medium")`
+		width: 194px;
+		height: 286px;
+
+		&:before {
+			width: 178px;
+			height: 286px;
+		}
+	`}
+
+	${media.lessThan("small")`
+		display: none;
+	`}
 `;
