@@ -4,6 +4,7 @@ import media from "styled-media-query";
 
 import SEO from "../components/seo";
 import Layout from "../components/Layout";
+import Navbar from "../components/Navbar";
 import HomeImage from "../components/HomeImage";
 import SocialIcons from "../components/SocialIcons";
 import PresentationText from "../components/PresentationText";
@@ -45,6 +46,7 @@ export default function Home() {
 		<Layout>
 			<ContainerFullWidth>
 				<SEO title="Home" />
+				<Navbar />
 				<HomeContainer>
 					<TextAndIcons>
 						<PresentationText />
