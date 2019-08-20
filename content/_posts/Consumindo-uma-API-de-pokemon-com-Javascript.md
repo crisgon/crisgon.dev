@@ -1,6 +1,8 @@
 ---
 title: Consumindo uma API de pokemon com Javascript
-tags: Javascript
+date: 2018-01-03 15:05:46
+tags: ["Javascript"]
+description: Teste
 ---
 
 Essa semana eu estava dando uma olhada em algumas vagas no <a href="https://github.com/frontendbr/" target="_blank">Front End Brasil</a> e notei que muitas vagas pediam **experiência com o uso de API's**. Fui correndo pro fórum do Front End Brasil e perguntei: "Como saber se tenho Experiência com API's?"
