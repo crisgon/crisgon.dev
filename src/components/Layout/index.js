@@ -11,6 +11,7 @@ import * as S from "./styled";
 
 const Layout = ({ children }) => {
 	const [hasLightTheme, setHasLightTheme] = useState(true);
+	const [sidebarIsOpen, setSidebarIsOpen] = useState(true);
 
 	useEffect(() => {
 		const localStorageTheme = localStorage.getItem("hasLightTheme");
@@ -24,13 +25,22 @@ const Layout = ({ children }) => {
 		localStorage.setItem("hasLightTheme", !hasLightTheme);
 	};
 
+	const collapseSidebar = () => {
+		setSidebarIsOpen(!sidebarIsOpen);
+		console.log(sidebarIsOpen);
+	};
+
 	return (
 		<ThemeProvider theme={hasLightTheme ? lightTheme : darktheme}>
 			<>
 				<GlobalStyles />
-				<S.Container>
-					<Sidebar changeTheme={changeTheme} />
-					<S.Main>{children}</S.Main>
+				<S.Container isOpen={sidebarIsOpen}>
+					<Sidebar
+						changeTheme={changeTheme}
+						toggleSidebar={collapseSidebar}
+						isOpen={sidebarIsOpen}
+					/>
+					<S.Main isOpen={sidebarIsOpen}>{children}</S.Main>
 				</S.Container>
 			</>
 		</ThemeProvider>

@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	display: grid;
-	grid-template-columns: 200px 1fr;
+	width: 100vw;
+	position: relative;
 `;
 
 export const Main = styled.main`
-	width: 100%;
-	grid-area: 2/2;
+	width: calc(100vw - ${props => (props.isOpen ? "200px" : "50px")});
+	position: absolute;
+	right: 0;
+	transition: all 0.5s;
+	padding: 1rem;
 `;
