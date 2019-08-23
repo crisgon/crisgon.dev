@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
+import { MdSubject } from "react-icons/md";
 import PropTypes from "prop-types";
 
 import Sidebar from "../Sidebar";
@@ -47,7 +48,12 @@ const Layout = ({ children }) => {
 						toggleSidebar={collapseSidebar}
 						isOpen={sidebarIsOpen}
 					/>
-					<S.Main isOpen={sidebarIsOpen}>{children}</S.Main>
+					<S.Main isOpen={sidebarIsOpen}>
+						<S.ArrowIcon onClick={collapseSidebar} isDark={hasLightTheme}>
+							<MdSubject />
+						</S.ArrowIcon>
+						{children}
+					</S.Main>
 				</S.Container>
 			</>
 		</ThemeProvider>

@@ -10,5 +10,17 @@ export const Main = styled.main`
 	position: absolute;
 	right: 0;
 	transition: all 0.5s;
-	padding: 1rem;
+	padding: 3rem 1rem;
+`;
+
+export const ArrowIcon = styled.div`
+	font-size: 2rem;
+	color: ${props => (props.isDark ? "#e8e8e8" : "#fff")};
+	position: absolute;
+	left: 5px;
+	top: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
 `;
