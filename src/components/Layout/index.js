@@ -15,8 +15,15 @@ const Layout = ({ children }) => {
 
 	useEffect(() => {
 		const localStorageTheme = localStorage.getItem("hasLightTheme");
+		const localStorageSidebar = localStorage.getItem("sidebarIsCollapse");
+
 		if (localStorageTheme) {
 			setHasLightTheme(JSON.parse(localStorageTheme));
+		}
+
+		if (localStorageSidebar) {
+			console.log(localStorageSidebar);
+			setSidebarIsOpen(JSON.parse(localStorageSidebar));
 		}
 	}, []);
 
@@ -27,7 +34,7 @@ const Layout = ({ children }) => {
 
 	const collapseSidebar = () => {
 		setSidebarIsOpen(!sidebarIsOpen);
-		console.log(sidebarIsOpen);
+		localStorage.setItem("sidebarIsCollapse", !sidebarIsOpen);
 	};
 
 	return (
