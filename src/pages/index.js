@@ -1,62 +1,31 @@
 import React from "react";
-import styled from "styled-components";
-import media from "styled-media-query";
 
 import SEO from "../components/seo";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import HomeImage from "../components/HomeImage";
-import SocialIcons from "../components/SocialIcons";
-import PresentationText from "../components/PresentationText";
-import ContainerFullWidth from "../components/ContainerFullWidth";
-
-const HomeContainer = styled.section`
-	width: 900px;
-	height: 400px;
-	padding: 0 3rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-
-	${media.lessThan("medium")`
-		width: 600px;
-	`}
-
-	${media.lessThan("small")`
-		width: 300px;
-		justify-content: center;
-	`}
-`;
-
-const TextAndIcons = styled.div`
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-`;
 
 export default function Home() {
 	return (
 		<Layout>
-			<ContainerFullWidth>
-				<SEO title="Home" />
-				<Navbar />
-				<HomeContainer>
-					<TextAndIcons>
-						<PresentationText />
-						<SocialIcons />
-					</TextAndIcons>
-					<HomeImage />
-				</HomeContainer>
-				<Footer />
-			</ContainerFullWidth>
+			<SEO title="Home" />
+			<p>
+				Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de
+				mula manquis sem cabeça. Quem num gosta di mé, boa gentis num é.
+				Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+				vulputate dapibus. Paisis, filhis, espiritis santis. Quem manda na minha
+				terra sou euzis! Detraxit consequat et quo num tendi nada. Mé faiz
+				elementum girarzis, nisi eros vermeio. Quem num gosta di mim que vai
+				caçá sua turmis! In elementis mé pra quem é amistosis quis leo. A ordem
+				dos tratores não altera o pão duris. Si u mundo tá muito paradis? Toma
+				um mé que o mundo vai girarzis! Sapien in monti palavris qui num
+				significa nadis i pareci latim. Atirei o pau no gatis, per gatis num
+				morreus. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua
+				vidis. Manduma pindureta quium dia nois paga. Casamentiss faiz malandris
+				se pirulitá. Mauris nec dolor in eros commodo tempor. Aenean aliquam
+				molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris,
+				paradis. Nullam volutpat risus nec leo commodo, ut interdum diam
+				laoreet. Sed non consequat odio. Vehicula non. Ut sed ex eros. Vivamus
+				sit amet nibh non tellus tristique interdum.
+			</p>
 		</Layout>
 	);
 }

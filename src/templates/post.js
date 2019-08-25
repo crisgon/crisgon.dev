@@ -1,7 +1,8 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const query = graphql`
 	query($slug: String!) {
@@ -17,7 +18,9 @@ export const query = graphql`
 export const BlogPost = props => {
 	return (
 		<Layout>
-			<Link to="/blog">Go back to the blogpage</Link>
+			<AniLink cover direction="left" bg={"red"} to="/blog">
+				Go back to the blogpage
+			</AniLink>
 			<h1>{props.data.markdownRemark.frontmatter.title}</h1>
 			<p>{props.data.markdownRemark.frontmatter.date}</p>
 			<div
