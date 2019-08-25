@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Blog = () => {
 	const data = useStaticQuery(graphql`
@@ -28,14 +29,22 @@ const Blog = () => {
 			<ul>
 				{data.allMarkdownRemark.edges.map(({ node }) => (
 					<li>
-						<Link key={node.fields.slug} to={`/blog/${node.fields.slug}`}>
+						<AniLink
+							cover
+							direction="left"
+							bg={"red"}
+							key={node.fields.slug}
+							to={`/blog/${node.fields.slug}`}
+						>
 							{node.frontmatter.title}
-						</Link>
+						</AniLink>
 						<p>{node.frontmatter.date}</p>
 					</li>
 				))}
 			</ul>
-			<Link to="/">Go back to the homepage</Link>
+			<AniLink cover direction="left" bg={"red"} to="/">
+				Go back to the homepage
+			</AniLink>
 		</Layout>
 	);
 };

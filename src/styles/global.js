@@ -54,8 +54,14 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   * {
-    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+    font-family: 'Ubuntu', sans-serif !important;
   }
+
+  img {
+    max-width: 100%;
+  }
+
+
 `;
 export default GlobalStyles;

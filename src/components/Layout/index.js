@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
+import React, { useState, useEffect } from "react";
+import { FaLightbulb } from "react-icons/fa";
 import { MdSubject } from "react-icons/md";
 import PropTypes from "prop-types";
 
@@ -9,6 +10,7 @@ import GlobalStyles from "../../styles/global";
 import { darktheme, lightTheme } from "./theme";
 
 import * as S from "./styled";
+import { TransitionPortal } from "gatsby-plugin-transition-link";
 
 const Layout = ({ children }) => {
 	const [hasLightTheme, setHasLightTheme] = useState(true);
@@ -43,17 +45,27 @@ const Layout = ({ children }) => {
 			<>
 				<GlobalStyles />
 				<S.Container isOpen={sidebarIsOpen}>
-					<Sidebar
-						changeTheme={changeTheme}
-						toggleSidebar={collapseSidebar}
-						isOpen={sidebarIsOpen}
-					/>
-					<S.Main isOpen={sidebarIsOpen}>
-						<S.ArrowIcon onClick={collapseSidebar} isDark={hasLightTheme}>
-							<MdSubject />
-						</S.ArrowIcon>
-						{children}
-					</S.Main>
+					<TransitionPortal level="top">
+						<Sidebar
+							toggleSidebar={collapseSidebar}
+							isOpen={sidebarIsOpen}
+							blogName={"Cristiano Gonçalves"}
+							jobRole={"Desenvolvedor Front End"}
+						/>
+					</TransitionPortal>
+
+					<TransitionPortal level="bottom">
+						<S.Main isOpen={sidebarIsOpen}>
+							<S.ArrowIcon onClick={collapseSidebar} isDark={hasLightTheme}>
+								<MdSubject />
+							</S.ArrowIcon>
+							{children}
+
+							<S.ChangeThemeButton onClick={changeTheme} isOpen={sidebarIsOpen}>
+								<FaLightbulb />
+							</S.ChangeThemeButton>
+						</S.Main>
+					</TransitionPortal>
 				</S.Container>
 			</>
 		</ThemeProvider>
